@@ -585,4 +585,9 @@ class ProductForm extends Control
 
 		$this->redirect('this');
 	}
+
+	public function handleFileUpload()
+	{
+		bdump($this->getPresenter()->getHttpRequest());
+	}
 }

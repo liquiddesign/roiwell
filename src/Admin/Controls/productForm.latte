@@ -1,4 +1,6 @@
 
+
+
     <form n:name="form">
         {var $activeMutation = $form->getActiveMutation()}
 	{var $renderer = $form->getRenderer()}
@@ -514,6 +516,15 @@
                 </tr>
             </table>
         </fieldset>
+    </form>
+
+    <link type="text/css" rel="stylesheet" href="{$baseUrl}/vendor/liquiddesign/forms/src/assets/dropzone/dropzone.min.css" />
+    <script src="{$baseUrl}/vendor/liquiddesign/forms/src/assets/dropzone/dropzone.min.js"></script>
+
+    <form action="{link fileUpload}" class="dropzone">
+        <div class="dz-default dz-message" data-dz-message="">
+            <span>Drop files here to upload</span>
+        </div>
     </form>
 
     <!-- Modal -->
